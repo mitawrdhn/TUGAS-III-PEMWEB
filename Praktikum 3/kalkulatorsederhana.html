@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KALKULATOR SEDERHANA</title>
+<SCRIPT language="Javascript">
+	//<!-
+	function tambah() {
+		a=eval(document.getElementById("a").value);
+		b=eval(document.getElementById("b").value);
+		c=a+b;
+		document.getElementById("hasil").value=c;
+	}
+	function kurang() {
+		a=eval(document.getElementById("a").value);
+		b=eval(document.getElementById("b").value);
+		c=a-b;
+		document.getElementById("hasil").value=c;
+	}
+	function kali() {
+		a=eval(document.getElementById("a").value);
+		b=eval(document.getElementById("b").value);
+		c=a*b;
+		document.getElementById("hasil").value=c;
+	}
+	function bagi() {
+		a=eval(document.getElementById("a").value);
+		b=eval(document.getElementById("b").value);
+		c=a/b;
+		document.getElementById("hasil").value=c;
+	}
+	//->
+</SCRIPT>
+</head>
+<body>
+	<FORM>
+		<TABLE>
+			<TR><td>ANGKA 1</td><TD>:</TD>
+				<TD><INPUT type="text" id="a" name="a"></TD>
+			</tr>
+			<TR><td>ANGKA 2</td><TD>:</TD>
+				<TD><INPUT type="text" id="b" name="b"></TD>
+			</tr>
+			<TR><td>HASIL</td><TD>:</TD>
+				<TD><INPUT type="text" id="hasil" name="hasil"></TD>
+			</tr>
+			<tr><td></td><td></td>
+				<td>
+	<input type="button" value ="+" onclick="tambah()">
+		<input type="button" value="-" onclick="kurang()">
+		<input type="button" value="x" onclick="kali()">
+		<input type="button" value="/" onclick="bagi()">
+	</tr></table>
+</form>
+</body>
+</html>
